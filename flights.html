@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>IataTravel - Book Your FLight With Us</title>
+    <meta name="title" content="IataTravel - The Premier Choice for Flight Booking and Travel Services">
+    <meta name="description"
+        content="Discover the world with ease and book your next flight with Iatatravel - the premier choice for flight booking and travel services.">
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        .flight-book-form-container {
+            background-color: var(--satin-sheen-gold);
+        }
+
+        .flight-book-heading {
+            text-align: center;
+        }
+
+        .flight-book-form {
+            padding: 20px;
+            color: #fff;
+        }
+
+        .flight-book-form input,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        .flight-book-form input[type=submit] {
+            width: 100%;
+            background-color: var(--phthalo-green-2);
+            ;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .flight-book-form input[type=submit]:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .flight-book-form div {
+            border-radius: 5px;
+            background-color: #666;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <img src="./assets/images/IATATRAVEL.png" width="204" height="48" alt="IataTravel logo">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="index.html" class="logo">
+                        <img src="./assets/images/logo.svg" width="204" height="48" alt="IataTravel logo">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="index.html
+            " class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="flights.html" class="navbar-link" data-nav-link>Flights</a>
+                    </li>
+
+                    <li class="navbar-item">
+                      <a href="airlines.html" class="navbar-link" data-nav-link>Airlines</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="about-us.html" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="destinations.html" class="navbar-link" data-nav-link>Destinations</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="header-action">
+                <a href="tel:+44 20 3287 7125">
+                    <button class="header-action-btn" aria-label="search">
+                        <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                        Make Us Call
+                        <div>+44 20 3287 7125</div>
+                    </button>
+                </a>
+
+                <button class="header-action-btn nav-open-btn" aria-label="menu" data-nav-toggler>
+                    <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="section hero" id="home" aria-label="home">
+                <div class="container">
+
+                    <h1 class="h1 hero-title">Book Your FLight</h1>
+
+                    <p class="hero-subtitle">Booking your flight with IataTravel is quick and easy. Our team of travel
+                        experts are also available to help you plan your perfect trip, from choosing the right
+                        destinations to finding the best deals on flights, hotels and rental cars. We offer 24/7
+                        customer support to ensure that your booking experience is smooth and stress-free. So why wait?
+                        Book your flight with IataTravel today and experience the best in travel planning.</p>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #OFFER
+      -->
+
+            <section class="offer flight-book-form-container">
+
+                <div class="flight-book-form">
+                    <h2 class="flight-book-heading">Fill this form and we will contact you soon.</h2>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="e8178984-28dd-4749-bc5c-11886546100f">
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="Passenger-Name" placeholder="Enter name..">
+
+                        <label for="flyingfrom">Flying From</label>
+                        <input type="text" id="flyingfrom" name="Flying-From" placeholder="Enter location..">
+
+                        <label for="flyingto">Flying To</label>
+                        <input type="text" id="flyingto" name="Flying-To" placeholder="Enter location..">
+
+                        <label for="departdate">Depart Date</label>
+                        <input type="date" id="departdate" name="Departure-Date">
+
+                        <label for="returndate">Return Date (if applicable)</label>
+                        <input type="date" id="returndate" name="Returen-Date">
+
+                        <label for="flyingto">Passengers</label>
+                        <input type="number" id="passengers" name="Number-of-Passengers" placeholder="Choose number..">
+
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phonebooking" name="Phone" placeholder="Your phone with country code.." required>
+
+                        <label for="email">Email</label>
+                        <input type="text" id="emailbooking" name="Email" placeholder="Enter email address..">
+
+                        <input type="hidden" name="subject" value="New Booking Through Website | IataTravel">
+
+                        <input type="hidden" name="redirect" value="http://127.0.0.1:5500/thank-you.html">
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <div class="offer-banner has-bg-image" style="background-image: url('./assets/images/book-flight.jpg')">
+                </div>
+
+            </section>
+
+
+
+
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <section class="section about" id="about" aria-label="about">
+                <div class="container">
+
+                    <div class="about-content">
+
+                        <p class="section-subtitle">Get To Know Us</p>
+
+                        <h2 class="h2 section-title">Trusted, Personalized Travel Planning with IataTravel</h2>
+
+                        <p class="section-text">
+                            We also put a great emphasis on trust, and that's why we only work with reputable and
+                            reliable partners,
+                            who have been vetted by our team. You can trust that the flights and accommodations we book
+                            for you are of
+                            the highest quality and at the best price.
+                        </p>
+
+                        <ul class="about-list">
+
+                            <li class="about-list-item">
+                                <ion-icon name="checkmark-outline" aria-hidden="ture"></ion-icon>
+
+                                <p class="item-text">Personalized and exceptional service guaranteed</p>
+                            </li>
+
+                            <li class="about-list-item">
+                                <ion-icon name="checkmark-outline" aria-hidden="ture"></ion-icon>
+
+                                <p class="item-text">Expert travel planning service</p>
+                            </li>
+
+                        </ul>
+
+                        <a href="flights.html" class="btn btn-primary">Book Now</a>
+
+                    </div>
+
+                    <figure class="about-banner img-holder" style="--width: 470; --height: 550;">
+                        <img src="./assets/images/about-banner.jpg" width="470" height="550" loading="lazy"
+                            alt="about banner" class="img-cover">
+                    </figure>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #NEWSLETTER
+      -->
+
+            <section class="section newsletter has-bg-image"
+                style="background-image: url('./assets/images/newsletter-bg.png')" aria-label="newsletter">
+                <div class="container">
+
+                    <div>
+                        <p class="section-subtitle">Subscribe Now</p>
+
+                        <h2 class="h2 section-title">Want to know about our offers first?</h2>
+                    </div>
+
+                    <div>
+                        <form action="https://api.web3forms.com/submit" method="POST" class="newsletter-form">
+            
+                          <input type="hidden" name="access_key" value="e8178984-28dd-4749-bc5c-11886546100f">
+            
+                          <input type="email" name="email_address" placeholder="Enter email.." class="input-field">
+            
+                          <input type="hidden" name="subject" value="Newsletter Submission through IataTravel">
+            
+                          <input type="hidden" name="redirect" value="iatatravel.co.uk">
+            
+                          <button type="submit" class="btn btn-secondary">
+                            Subscribe
+            
+                            <ion-icon name="airplane" aria-hidden="true"></ion-icon>
+                          </button>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+        <div class="container">
+
+            <div class="footer-top section grid-list">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo">
+                        <img src="./assets/images/IATATRAVEL.png" width="204" height="48" alt="fly logo">
+                    </a>
+
+                    <p class="footer-text">
+                        We are dedicated to providing exceptional service and making your travel experience as seamless
+                        and stress-free as possible.
+                    </p>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Explore</p>
+                    </li>
+
+                    <li>
+                        <a href="about-us.html" class="footer-link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="destinations.html" class="footer-link">Destinations</a>
+                    </li>
+
+                    <li>
+                        <a href="flights.html" class="footer-link">Book Flight</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Links</p>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="airlines.html" class="footer-link">Airlines</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Terms of Use</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Contact</p>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+                        <a href="tel:+44 20 3287 7125" class="footer-link">+44 20 3287 7125</a>
+                      </li>
+            
+                      <li class="footer-list-item">
+                        <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            
+                        <a href="mailto:info@iatatravel.co.uk" class="footer-link">info@iatatravel.co.uk</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="location" aria-hidden="ture"></ion-icon>
+
+                        <address class="address">
+                            30 broklyn golden street. New York
+                        </address>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    Copyright 2023 by IataTravel.
+                </p>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
