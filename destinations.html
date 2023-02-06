@@ -498,10 +498,67 @@
             </footer>
 
 
-
-
-
             <!-- 
+              - #Floating Button
+             -->
+            <button class="floating-button" id="myBtn">Send Your Query</button>
+          
+            <!-- Book Ticket Model -->
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+          
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p class="modal-title">Please fill this form and receive an instant call from us...</p>
+                  <span class="close">&times;</span>
+                </div>
+          
+                <form class="modal-form" action="https://api.web3forms.com/submit" method="POST">
+          
+                  <input type="hidden" name="access_key" value="e8178984-28dd-4749-bc5c-11886546100f">
+          
+                  <label for="fname">First Name</label>
+                  <input type="text" name="First-Name" placeholder="Your name..">
+          
+                  <label for="lname">Last Name</label>
+                  <input type="text" name="Last-Name" placeholder="Your last name..">
+          
+                  <label for="lname">Flying From</label>
+                  <input type="text" name="Flying-From" placeholder="Enter location..">
+          
+                  <label for="lname">Flying To</label>
+                  <input type="text" name="Flying-To" placeholder="Enter location..">
+          
+                  <label for="lname">Departure Date</label>
+                  <input type="date" name="Departure-Date" placeholder="Your last name..">
+          
+                  <label for="lname">Return Date (if applicable)</label>
+                  <input type="date" name="Return-Date" placeholder="Your last name..">
+          
+                  <label for="lname">Passengers</label>
+                  <input type="number" min="1" name="Number-of-Passengers" placeholder="Number of passengers..">
+          
+                  <label for="lname">Phone Number</label>
+                  <input type="text" name="Phone-Number" placeholder="Enter phone.." required>
+          
+                  <label for="lname">Email</label>
+                  <input type="text" name="Email" placeholder="Enter email..">
+          
+                  <input type="hidden" name="subject" value="New Booking Through Homepage | IataTravel">
+          
+                  <input type="hidden" name="redirect" value="https://iatatravel.co.uk/thank-you.html">
+          
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+          
+            </div>
+          
+          
+          
+          
+          <!-- 
     - #BACK TO TOP
   -->
 
