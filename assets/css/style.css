@@ -845,8 +845,8 @@ body.active { overflow: hidden; }
   border-radius: var(--radius-circle);
   box-shadow: var(--shadow);
   transition: var(--transition-1);
-  visibility: hidden;
-  opacity: 0;
+  /* visibility: hidden; */
+  /* opacity: 0; */
   z-index: 3;
 }
 
