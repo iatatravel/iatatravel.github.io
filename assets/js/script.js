@@ -51,12 +51,14 @@ addEventOnElem(navbarLinks, "click", closeNavbar);
 
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
+const backTop = document.querySelector(".backtop")[0];
 
 const activeElemOnScroll = function () {
-  // if (window.scrollY > 100) {
-  //   header.classList.add("active");
-  //   backTopBtn.classList.add("active");
-  // } else {
+  if (window.scrollY > 100) {
+    // header.classList.add("active");
+    backTopBtn.classList.add("backtop-visible");
+  } 
+  // else {
   //   header.classList.remove("active");
   //   backTopBtn.classList.remove("active");
   // }

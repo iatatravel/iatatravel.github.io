@@ -850,6 +850,16 @@ body.active { overflow: hidden; }
   z-index: 3;
 }
 
+.backtop{  
+  visibility: hidden;
+  opacity: 0;
+}
+.backtop-visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
 .back-top-btn.active {
   visibility: visible;
   opacity: 1;
@@ -1368,12 +1378,18 @@ select {
   .modal-content {
     width: 95%;
   }
+  .floating-btn-home {
+    visibility: hidden;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .modal-content {
     width: 95%;
+  }
+  .floating-btn-home {
+    visibility: hidden;
   }
 }
 
@@ -1388,6 +1404,9 @@ select {
 @media only screen and (min-width: 992px) {
   .modal-content {
     width: 70%;
+  }
+  .floating-btn-home {
+    visibility: visible;
   }
 }
 
