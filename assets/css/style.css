@@ -420,6 +420,8 @@ body.active { overflow: hidden; }
   position: absolute;
   bottom: 0;
   left: 50%;
+  max-width: 100%;
+  height: auto;
   transform: translate(-50%, 40%);
   animation: flyMove 1.25s ease-in-out infinite alternate;
 }
